@@ -33,7 +33,7 @@ if (animOneCards.length > 0) {
 
   setTimeout(() => {
     animOnScroll();
-  }, 400);
+  }, 500);
 }
 
 const animTwoCards = document.querySelectorAll('._anim-card-2');
@@ -71,7 +71,7 @@ if (animTwoCards.length > 0) {
 
   setTimeout(() => {
     animOnScroll();
-  }, 500);
+  }, 600);
 }
 
 const animThreeCards = document.querySelectorAll('._anim-card-3');
@@ -111,7 +111,7 @@ if (animThreeCards.length > 0) {
 
   setTimeout(() => {
     animOnScroll();
-  }, 600);
+  }, 700);
 }
 
 const animFourCards = document.querySelectorAll('._anim-card-4');
@@ -150,7 +150,7 @@ if (animFourCards.length > 0) {
 
   setTimeout(() => {
     animOnScroll();
-  },700);
+  },800);
 }
 
 const animItems = document.querySelectorAll('._anim-items');
