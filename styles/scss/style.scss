@@ -189,6 +189,7 @@ body {
   text-align: center;
   letter-spacing: 0.2px;
 }
+
 .button__text {
   font-weight: 200;
   font-size: 34px;
@@ -320,13 +321,23 @@ body {
   height: 64px;
   left: 220px;
   top: 496px;
-  background: #ffffff;
+  background: #fff;
   color: #3cbdfe;
   mix-blend-mode: normal;
   border: 3px solid #3cbdfe;
   border-radius: 50px;
   text-align: center;
   margin: 50px 0px 30px 105px;
+}
+.button-service:hover {
+  background-color: #3cbdfe;
+  color: #fff;
+}
+
+.button-service:active {
+  background: #fff;
+  border: 3px solid #3cbdfe;
+  color: #3cbdfe;
 }
 
 //? УСЛУГИ --------------------------------------------------//
@@ -360,7 +371,6 @@ body {
   flex-direction: column;
   max-height: 800px;
   max-width: 714px;
-  border: 1px solid #fff;
 }
 .services__scale-tariff {
   display: grid;
@@ -481,6 +491,8 @@ body {
   height: 400px;
 }
 .skill__box__title {
+  display: flex;
+  justify-content: start;
   font-weight: 600;
   font-size: 38px;
   line-height: 46px;
@@ -591,7 +603,6 @@ body {
   transform: translate(0px, 0px);
   opacity: 1;
 }
-
 .card-1 {
   transform: translate(0px, 110%);
   opacity: 0;
@@ -870,6 +881,23 @@ body {
   .card-4 {
     max-width: 100%;
   }
+
+  .card-1 {
+    transform: translate(0px, 0%);
+    opacity: 1;
+  }
+  .card-2 {
+    transform: translate(0px, 0%);
+    opacity: 1;
+  }
+  .card-3 {
+    transform: translate(0px, 0%);
+    opacity: 1;
+  }
+  .card-4 {
+    transform: translate(0px, 0%);
+    opacity: 1;
+  }
 }
 
 //* АДАПТИВНОСТЬ ВОПРОСОВ ------------------------------------//
@@ -963,7 +991,7 @@ body {
   }
 }
 
-//! АДАПТИВНОСТЬ УСЛУГ ---------------------------------------//
+//* АДАПТИВНОСТЬ УСЛУГ ---------------------------------------//
 /* НОУТБУКИ */
 @media (max-width: 1199px), screen and (max-height: 750px) {
   .services {
@@ -1112,29 +1140,120 @@ body {
   }
 }
 
+
 //! АДАПТИВНОСТЬ НАВЫКОВ ---------------------------------------//
 
+/* ПЛАНШЕТЫ */
 @media (max-width: 992px) {
 }
+
+/* СРЕДНИЕ ПЛАНШЕТЫ */
 @media (max-width: 767px) {
 }
+
+/* СМАРТФОНЫ */
 @media (max-width: 479px) {
 }
 
-//! АДАПТИВНОСТЬ ПОДВАЛА --------------------------------------//
 
+//* АДАПТИВНОСТЬ ПОДВАЛА --------------------------------------//
+/* ПЛАНШЕТЫ */
 @media (max-width: 992px) {
-}
-@media (max-width: 767px) {
-}
-@media (max-width: 479px) {
+  .footer {
+    height: 485px;
+  }
+  .footer__block-list {
+    font-size: 20px;
+    width: 670px;
+  }
+  .block-list-1 {
+    max-width: 136px;
+  }
   .block-list-2 {
-    opacity: 0;
+    max-width: 192px;
   }
   .block-list-3 {
-    opacity: 0;
+    max-width: 103px;
   }
-  .footer__logo__title {
+  .footer__block-list {
+    font-size: 20px;
+    width: 700px;
+  }
+  .footer-contact {
+    color: #a1a1a1;
+    font-size: 16px;
+    width: 220px;
+  }
+  .footer__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+  }
+}
+/* СРЕДНИЕ ПЛАНШЕТЫ */
+@media (max-width: 767px) {
+  .footer {
+    height: 460px;
+  }
+  .footer__block-list {
+    font-size: 20px;
+    width: 570px;
+  }
+  .block-list-1 {
+    max-width: 110px;
+  }
+  .block-list-2 {
+    max-width: 151px;
+  }
+  .block-list-3 {
+    max-width: 78px;
+  }
+  .footer__block-list {
     font-size: 18px;
+    width: 450px;
+  }
+  .footer-contact {
+    font-size: 14px;
+    width: 180px;
+  }
+  .footer__logo {
+    font-size: 21px;
+  }
+}
+/* СМАРТФОНЫ */
+@media (max-width: 479px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+  }
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+  }
+  .footer__block-list {
+    font-size: 27px;
+    width: 400px;
+  }
+  .block-list-1 {
+    max-width: 110px;
+    margin: 0 auto;
+  }
+  .block-list-2 {
+    display: none;
+  }
+  .block-list-3 {
+    display: none;
+  }
+  .footer-contact {
+    font-size: 14px;
+    width: 180px;
+  }
+  .footer__logo {
+    font-size: 22px;
   }
 }
