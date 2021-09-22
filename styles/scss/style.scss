@@ -446,7 +446,7 @@ body {
 
 .skills {
   position: relative;
-  min-width: 1377px;
+  width: 100%;
   min-height: 1024px;
   color: #ffffff;
 }
@@ -476,48 +476,50 @@ body {
   font-size: 48px;
   line-height: 59px;
   text-align: center;
+
 }
 .skills__main-skill {
   display: flex;
   justify-content: start;
   align-items: start;
+  height: 800px;
+
 }
 .skill__box {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  width: 400px;
+  width: 370px;
   height: 400px;
+  margin: 40px 10px 0px 10px;
 }
 .skill__box__title {
-  display: flex;
-  justify-content: start;
   font-weight: 600;
-  font-size: 38px;
+  font-size: 28px;
   line-height: 46px;
-  margin: 0px 0px 30px 0px;
+  margin: 0px 0px 30px 40px;
 }
 .skills-list__li {
   display: flex;
 }
 .skills-list__li__icon {
   margin: 8px 20px 0px 0px;
-  width: 60px;
-  height: 20px;
+  width: 45px;
+  height: 25px;
+
 }
 .skills-list__li__p {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  width: 280px;
-  margin: 5px 0px 20px 0px;
+  width: 240px;
+  margin: 0px 0px 10px 0px;
+
 }
 .skills__button-call {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 250px;
+  height: 200px;
 }
 .skills__button__click {
   display: flex;
@@ -1140,21 +1142,116 @@ body {
   }
 }
 
-
 //! АДАПТИВНОСТЬ НАВЫКОВ ---------------------------------------//
+
+/* НОУТБУКИ */
+@media (max-width: 1199px), screen and (max-height: 750px) {
+  .skills__body {
+    display: flex;
+    flex-direction: column;
+    max-height: 700px;
+    margin: 60px 20px 0px 20px;
+  }
+  .skill__box {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    margin: 40px 10px 0px 10px;
+  }
+  .skill__box__title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 46px;
+    margin: 0px 0px 30px 50px;
+  }
+  .skills-list__li__icon {
+    margin: 8px 20px 0px 0px;
+    width: 25px;
+    height: 15px;
+  }
+  .skills-list__li__p {
+    font-weight: 400;
+    font-size: 18px;
+    width: 250px;
+    margin: 2px 0px 20px 0px;
+  }
+}
 
 /* ПЛАНШЕТЫ */
 @media (max-width: 992px) {
+  .skills-block__title {
+    font-size: 42px;
+  }
+  .skill__box__title {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 46px;
+    margin: 0px 0px 0px 50px;
+  }
+  .skills-list__li__icon {
+    margin: 8px 20px 0px 0px;
+    width: 23px;
+    height: 15px;
+  }
+  .skills__main-skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .skill__box {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 270px;
+    margin: 40px 10px 0px 10px;
+  }
+  .skills-list__li__p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    width: 300px;
+    margin: 5px 0px 10px 0px;
+  }
+  .skills__body {
+    display: flex;
+    flex-direction: column;
+    max-height: 1400px;
+    margin: 60px 0px 0px 0px;
+  }
+  .skills {
+    position: relative;
+    width: 100%;
+    min-height: 1400px;
+    color: #ffffff;
+  }
 }
 
 /* СРЕДНИЕ ПЛАНШЕТЫ */
 @media (max-width: 767px) {
+  .skills-block__title {
+    width: 478px;
+    height: 180px;
+    font-size: 32px;
+    border: 1px solid rgb(8, 8, 8);
+  }
+  .skill__box__title {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 46px;
+    margin: 0px 0px 0px 50px;
+  }
 }
 
 /* СМАРТФОНЫ */
 @media (max-width: 479px) {
+  .skills-block__title {
+    width: 320px;
+    height: 180px;
+    font-size: 24px;
+  }
 }
-
 
 //* АДАПТИВНОСТЬ ПОДВАЛА --------------------------------------//
 /* ПЛАНШЕТЫ */
