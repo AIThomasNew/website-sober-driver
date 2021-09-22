@@ -359,12 +359,13 @@ body {
   display: flex;
   flex-direction: column;
   max-height: 800px;
+  max-width: 714px;
+  border: 1px solid #fff;
 }
 .services__scale-tariff {
   display: grid;
   grid-template-columns: repeat(3, 2fr);
   grid-gap: 23px;
-  place-items: center;
 }
 .tariff {
   display: flex;
@@ -408,13 +409,16 @@ body {
 .tariff:hover {
   background-color: #373738;
 }
+.services__text-block {
+  display: flex;
+}
 .services__text-block p {
   width: 773px;
   height: 82px;
   left: 302px;
   top: 0px;
   font-weight: 200;
-  font-size: 27px;
+  font-size: 24px;
   line-height: 33px;
   text-align: center;
   margin: 70px 0px 0px 0px;
@@ -624,8 +628,6 @@ body {
   transform: translate(0px, 0px);
   opacity: 1;
 }
-
-
 
 //*  АДАПТИВНОСТЬ ШАПКА, ЛОГО, МЕНЮ ---------------------------//
 @media (max-width: 992px) {
@@ -963,19 +965,151 @@ body {
 
 //! АДАПТИВНОСТЬ УСЛУГ ---------------------------------------//
 /* НОУТБУКИ */
-@media (max-width: 1199px) {
+@media (max-width: 1199px), screen and (max-height: 750px) {
+  .services {
+    min-height: 1100px;
+  }
+  .services__image {
+    filter: brightness(70%);
+  }
 }
-
 /* ПЛАНШЕТЫ */
 @media (max-width: 992px) {
+  .services {
+    min-height: 1100px;
+  }
+  .services__image {
+    filter: brightness(30%);
+  }
 }
-
 /* СРЕДНИЕ ПЛАНШЕТЫ */
 @media (max-width: 767px) {
+  .services {
+    min-height: 1200px;
+    justify-content: start;
+  }
+  .services__container {
+    margin: 50px 0px 140px 0px;
+  }
+  .header-block__title {
+    height: 40px;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: calc(48px / 35px * 100%);
+    text-align: center;
+    color: #fff;
+    padding: 0px 0px 70px 0px;
+  }
+  .services__body {
+    max-width: 426px;
+  }
+  .services__scale-tariff {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    grid-gap: 20px;
+  }
+  .tariff {
+    width: 200px;
+    height: 270px;
+    background: #2b2c32;
+    border-radius: 5px;
+    h3 {
+      font-weight: bold;
+      font-size: 14px;
+      margin: 10px 0px 10px 0px;
+    }
+    p {
+      width: 180px;
+      height: 50px;
+      left: 19px;
+      top: 151px;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 17px;
+      text-align: center;
+      margin: 0px 0px 18px 0px;
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 156px;
+      height: 37px;
+      left: 32px;
+      top: 236px;
+      text-align: center;
+      background: #33b047;
+      border-radius: 20px;
+      color: #fff;
+    }
+  }
 }
-
 /* СМАРТФОНЫ */
 @media (max-width: 479px) {
+  .services {
+    min-height: 1900px;
+    justify-content: start;
+  }
+  .services__container {
+    margin: 50px 0px 140px 0px;
+  }
+  .header-block__title {
+    height: 40px;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: calc(48px / 35px * 100%);
+    text-align: center;
+    color: #fff;
+    padding: 0px 0px 70px 0px;
+    margin: 0px 0px 20px 0px;
+  }
+  .services__body {
+    max-width: 203px;
+    margin: 0 auto;
+  }
+  .services__scale-tariff {
+    display: grid;
+    grid-template-columns: repeat(1, 6fr);
+    grid-gap: 20px;
+  }
+  .tariff {
+    width: 200px;
+    height: 270px;
+    background: #2b2c32;
+    border-radius: 5px;
+    h3 {
+      font-weight: bold;
+      font-size: 14px;
+      margin: 10px 0px 10px 0px;
+    }
+    p {
+      width: 180px;
+      height: 50px;
+      left: 19px;
+      top: 151px;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 17px;
+      text-align: center;
+      margin: 0px 0px 18px 0px;
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 156px;
+      height: 37px;
+      left: 32px;
+      top: 236px;
+      text-align: center;
+      background: #33b047;
+      border-radius: 20px;
+      color: #fff;
+    }
+  }
+  .services__text-block {
+    display: none;
+  }
 }
 
 //! АДАПТИВНОСТЬ НАВЫКОВ ---------------------------------------//
